@@ -1,0 +1,134 @@
+.header
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid #e5e5e5
+    @media(max-width:1000px)
+        flex-direction: column
+    @media(max-width:540px)
+        flex-direction: column
+    a
+        font-size: 14px
+        font-weight: 400
+        text-decoration: none
+    .main, .secondary
+        display: flex
+        align-items: center
+    .main
+        @media(max-width:540px)
+            padding: 20px 0 0
+        .logo
+            flex-shrink: 0
+            width: 42px
+            height: 42px
+            margin-right: 24px
+            background-color: #222222
+            text-transform: uppercase
+            text-align: center
+            line-height: 42px
+            color: #ffffff
+        .nav
+            display: flex
+            margin: 0
+            padding-left: 0
+            @media(max-width:540px)
+                flex-direction: column
+            li
+                list-style-type: none
+                a
+                    padding: 0 24px
+                    line-height: 115px
+                    color: #303030
+                    transition: .2s
+                    &:hover
+                        color: #736f6f
+                    @media(max-width:900px)
+                        padding: 0 14px
+                    @media(max-width:540px)
+                        line-height: 20px
+    .secondary
+        justify-content: flex-end
+        @media(max-width:1000px)
+            padding-bottom: 20px
+        @media(max-width:540px)
+            flex-direction: column
+            align-items: flex-end
+            padding: 20px 0
+        .login, .basket
+            margin-right: 42px
+            @media(max-width:540px)
+                margin-right: 0
+                margin-bottom: 20px
+        .login
+            padding-left: 20px
+            background-image: url(../images/icon-user.png)
+            background-repeat: no-repeat
+            background-position: 0
+            color: #303030
+        .basket
+            a
+                padding-left: 25px
+                background-image: url(../images/icon-case.png)
+                background-repeat: no-repeat
+                color: #303030
+            span
+                font-size: 14px
+                font-weight: 400
+        .search
+            position: relative
+            flex-shrink: 0
+            width: 42px
+            height: 42px
+            border: 1px solid #959595
+            box-sizing: border-box
+            background-color: transparent
+            transition: .2s
+            &:before
+                position: absolute
+                top: 50%
+                left: 50%
+                display: inline-block
+                width: 16px
+                height: 16px
+                margin-top: -8px
+                margin-left: -8px
+                background-image: url(../images/icon-loupe.png)
+                background-repeat: no-repeat
+                background-position: center
+                content: ""
+            &:hover
+                background-color: #606060
+                &:before
+                    background-image: url(../images/icon-loupe-hover.png)
+        input
+            height: 42px
+            padding-left: 10px
+            box-sizing: border-box
+            border: 1px solid #959595
+            border-right: none
+            outline: none
+        input::-webkit-input-placeholder
+            transition: .2s
+        input::-moz-placeholder
+            transition: .2s
+        input:focus::-webkit-input-placeholder
+            color: transparent
+        input:focus::-moz-placeholder
+            color: transparent
+    &.category
+        @media(max-width:1144px)
+            flex-direction: column
+        .secondary
+            @media(max-width:1130px)
+                padding-bottom: 20px
+            .search
+                background-color: #606060
+                &:before
+                    background-image: url(../images/icon-loupe-hover.png)
+            .login, .basket
+                @media(max-width:600px)
+                    margin-right: 16px
+            .login
+                span
+                    color: #f68236
+            .block-search
+                display: flex

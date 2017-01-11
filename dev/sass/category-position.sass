@@ -1,0 +1,48 @@
+.category-position
+    padding: 30px 0
+    text-align: center
+    &.t-shirt
+        padding-bottom: 60px
+        border-bottom: 1px solid #e5e5e5
+    h2
+        margin-bottom: 10px
+        font-size: 36px
+        font-weight: 700
+        line-height: 35px
+        text-transform: uppercase
+        color: #303030
+    a
+        position: relative
+        font-family: initial
+        font-size: 18px
+        font-style: italic
+        line-height: 36px
+        color: #606060
+        &:after
+            position: absolute
+            top: 9px
+            right: -14px
+            width: 5px
+            height: 6px
+            background-image: url(../images/icon-arrowsm.png)
+            content: ""
+    .wrapper-category-position
+        display: flex
+        justify-content: space-around
+        margin-top: 60px
+        @media(max-width:960px)
+            flex-wrap: wrap
+        span
+            display: inline-block
+            width: 208px
+            height: 256px
+            border: 1px solid #e5e5e5
+        figure
+            margin: 0
+            figcaption
+                h3,p
+                    font-size: 14px
+                    line-height: 24px
+                    color: #303030
+                h3
+                    font-weight: 700

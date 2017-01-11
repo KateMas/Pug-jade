@@ -1,0 +1,40 @@
+extends includes/main.pug
+
+mixin category-position(title, description)
+    figure
+        span
+        figcaption
+            h3= title
+            p= description
+
+block content
+    include includes/header-category.pug
+    main(class="wrapper")
+        section(class="breadcrumbs")
+            ul
+                li
+                    a(href="#") Home
+                li
+                    a(href="#") Men
+        section(class="category-position")
+            h2 Coats
+            a(href="") show more
+            div(class="wrapper-category-position")
+                +category-position('Double-Layered Top', '€ 89,95')
+                +category-position('Lorem ipsum dolor', '€ 100,95')
+                +category-position('Double-Layered Top', '€ 89,95')
+                +category-position('Lorem ipsum dolor', '€ 100,95')
+        section(class="category-position")
+            h2 Outerwear
+            a(href="") show more
+            div(class="wrapper-category-position")
+                for item in outerwear
+                    +category-position(item.title, item.description)
+        section(class="category-position t-shirt")
+            h2 T-shirts
+            a(href="") show more
+            div(class="wrapper-category-position")
+                for item in tShirts
+                    +category-position(item.title, item.description)
+        p(class="check") Check our lookbook
+        include includes/slider.pug

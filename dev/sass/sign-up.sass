@@ -1,0 +1,56 @@
+.sign-up
+    padding-top: 30px
+    padding-bottom: 60px
+    text-align: center
+    h2
+        margin-bottom: 10px
+        font-size: 36px
+        font-weight: 700
+        line-height: 35px
+        text-transform: uppercase
+        color: #303030
+    h6
+        margin-top: 0
+        font-family: initial
+        font-size: 18px
+        font-weight: 300
+        font-style: italic
+        letter-spacing: 1px
+        line-height: 35px
+        color: #606060
+    form
+        width: 45%
+        height: 56px
+        margin: auto
+        @media(max-width:780px)
+            width: 98%
+        input, button
+            height: inherit
+            box-sizing: border-box
+        input
+            width: 82%
+            font-style: italic
+            padding-left: 10px
+            border: 1px solid #959595
+            border-right: none
+            &:focus
+                outline: none
+        input::-webkit-input-placeholder
+            color: #606060
+            transition: .5s
+        input::-moz-placeholder
+            color: #606060
+            transition: .5s
+        input:focus::-webkit-input-placeholder
+            color: transparent
+        input:focus::-moz-placeholder
+            color: transparent
+        button
+            width: 18%
+            background-color: #f68236
+            border: 1px solid #f68236
+            cursor: pointer
+            color: #fff
+            transition: .2s
+            &:hover
+                background-color: #de7632

@@ -1,0 +1,65 @@
+extends includes/main.pug
+
+block content
+    include includes/header-main.pug
+    main(class="wrapper")
+        section(class="first-title")
+            h1 Hazy Shade of spring
+            h6 Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.
+            a(class="btn check" href="#") check new arrivals
+        section(class="gallery")
+            div(class="col-1")
+                div(class="tall")
+                    p HEATHER
+                        br
+                        | GREY BASICS
+                    p New Arrival
+                div(class="info@")
+            div(class="col-2")
+                div(class="twitter")
+                    span(class="icon icon-twitter")
+                    p Opening Ceremony
+                        br
+                        | @IndonesiaFW tomorrow,
+                        br
+                        | PMers! Are you ready for the
+                        br
+                        | biggest fashion movement in
+                    p @PuspitaMarthaID
+                div(class="price")
+                    p chuck taylors
+                    p $125.00
+                div(class="dark-bgc")
+                    span(class="icon icon-arrow")
+                    p Jaxon Hat
+                    p Beanie Hat
+            div(class="col-3")
+                div(class="new-arrival")
+                div(class="twitter")
+                    span(class="icon icon-twitter")
+                    p Girls, Girls, Girls: A Look
+                        br
+                        | Back at 50 Years of the
+                        br
+                        | Pirelli Calendar
+                    p @Vogue
+                div(class="price")
+                    p basic blazer
+                    p from $199.00
+            div(class="col-4")
+                div(class="dark-bgc")
+                    span(class="icon icon-arrow")
+                    p elegant shoes
+                    p BRAIDED LEATHER
+                div(class="tall")
+                    p Jeans for
+                        br
+                        | ADVENTURE
+                    p New Arrival
+        section(class="sign-up")
+            h2 sign up to receive our updates
+            h6 Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
+            form
+                input(type="email" placeholder="Your e-mail")
+                button add
+        include includes/slider.pug

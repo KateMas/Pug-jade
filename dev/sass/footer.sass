@@ -1,0 +1,70 @@
+footer
+    .footer
+        display: flex
+        justify-content: space-between
+        margin-bottom: 80px
+        padding-top: 30px
+        @media(max-width:780px)
+            flex-wrap: wrap
+        @media(max-width:702px)
+            justify-content: center
+            text-align: center
+        div
+            width: 311px
+        div:not(:last-child)
+            position: relative
+            &:after
+                position: absolute
+                top: 0
+                right: 30px
+                width: 1px
+                height: 160px
+                background-color: #eaeaea
+                content: ""
+                @media(max-width:780px)
+                    display: none
+        h2
+            font-size: 14px
+            font-weight: 700
+            text-transform: uppercase
+            color: #303030
+        a, p
+            font-size: 12px
+            line-height: 23px
+            color: #303030
+        ul
+            margin-top: 0
+            padding-left: 0
+            li
+                list-style-type: none
+                a
+                    text-decoration: none
+                    transition: .2s
+                    &:hover
+                        color: #736f6f
+        .wrapper-social
+            display: flex
+            margin-top: 10px
+            @media(max-width:702px)
+                justify-content: center
+            li
+                width: 32px
+                height: 32px
+                border: 1px solid #303030
+                &:not(:last-child)
+                    margin-right: 14px
+                a
+                    display: inline-block
+                    width: inherit
+                    height: inherit
+                    background-repeat: no-repeat
+                    background-position: 50%
+                    transition: .2s
+                    &.twitter
+                        background-image: url(../images/icon-tw.png)
+                    &.facebook
+                        background-image: url(../images/icon-fb.png)
+                    &.pinterest
+                        background-image: url(../images/icon-pinterest.png)
+                    &:hover
+                        opacity: .8
